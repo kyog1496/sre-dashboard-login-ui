@@ -1,0 +1,362 @@
+/***********************************************************
+    LOGIN PRIMARY SASS FILE - BUILT ON BT-UX-FRAMEWORK
+    Author: Michael Lu 
+    (Auto Compiled to CSS during runtime)
+***********************************************************/
+
+
+
+
+.login-wrapper {
+  @include flexbox();
+  background: black url('../../images/loginbg.png') no-repeat center center;
+  background-size: cover;
+  justify-content: flex-end;
+  align-items: center;
+  //background-blend-mode: overlay;
+  background-color: #909090;
+
+  .login-panel {
+    @include flexbox(0 0 auto, column, flex-start, center);
+    padding: 75px 0px 75px 0px;
+    background: white;
+    box-shadow: 0px 0px 34px rgb(54, 54, 54);
+    border-radius: 0.7rem 0 0 0.7rem;
+    
+    form {
+      @include flexbox(0 0 auto, column, flex-start, center);
+    }
+    .logo {
+      height: 4rem;
+      margin-bottom: 1.5rem;
+    }
+    // .title {
+    //   font-weight: 300;
+    //   font-size: 1.2rem;
+    //   margin: 1rem 0;
+    //   color: $textstandard;
+    //   opacity: 0.7;
+    //   &.bold {
+    //     font-weight: 600;
+    //   }
+    // }
+    // .subtitle {
+    //   font-weight: 300;
+    //   font-size: 1.2rem;
+    //   padding-bottom: 1.3rem;
+    //   margin-bottom: 1.3rem;
+    //   color: $textstandard;
+    //   opacity: 0.7;
+    //   @include bg-border(bottom);
+    //   span {
+    //     font-weight: 600;
+    //   }
+    // }
+    // .loginbtn {
+    //   width: 12.6rem;
+    //   height: 2.75rem;
+    //   border-radius: 9px;
+    //   background: #008ace;
+    //   box-shadow: 0px 0px 12px rgba(7, 102, 149, 0.68);
+    //   color: white;
+    //   font-weight: 600;
+    //   font-size: 1rem;
+    //   margin: 1rem 0;
+    //   @include flexbox(0 0 auto);
+    //   user-select: none;
+    //   border: none;
+    //   outline: none;
+    // }
+    .login-options {
+      @include flexbox();
+      flex-wrap: nowrap;
+      height: 3rem;
+      .toggle {
+        @include flexbox();
+        font-size: 0.8rem;
+        margin-right: 1rem;
+        flex-wrap: nowrap;
+      }
+      /*
+      .forgot-password {
+        font-size: 0.8rem;
+        flex-wrap: nowrap;
+      }
+      */
+    }
+    /*
+    .validations {
+      @include flexbox();
+      text-align: center;
+      padding: 1rem 0;
+      color: $syscored;
+      max-width: 16rem;
+    }
+    .login-loader {
+      margin: 1.6rem 0;
+    }
+    */
+  }
+
+  // Vendor or associate login selection panel
+  .user-selection {
+    width: 55%;
+    height: 100%;
+    justify-content: center;
+    padding-bottom: 10%;
+
+    .option-panel-wrapper {
+      height: 14.7rem;
+      //width: 572px;
+      margin-left: -2rem;
+      margin-top: 8rem;
+
+      .welcome-text {
+        margin-left: 10.6rem;
+      }
+
+      .options-inner-wrapper {
+        display: flex;
+        margin-left: 10.6rem;
+      }
+
+      .suite-logo {
+        display: flex;
+        font-size: 2rem;
+        font-weight: 100;
+        line-height: 3.75rem;
+        color: #e5e5e5;
+
+        img {
+          margin-right: 0.9rem;
+        }
+        span {
+          margin-left: 0.9rem;
+          color: #7a838b;
+          line-height: 2rem;
+          margin-top: 0.5rem;
+
+          .sub-title {
+            font-size: 0.75rem;
+            font-weight: 600;
+            //margin-left: 0;
+            margin-top: -0.3rem;
+          }
+        }
+      }
+
+      .error-msg {
+        color: $syscored;
+        margin-bottom: 0.75rem;
+        //display: none;
+      }
+
+      .login-text {
+        color: #7a838b;
+        font-size: 1rem;
+        line-height: 1.4rem;
+        font-weight: 100;
+
+        &.associate-text {
+          margin-top: 2.18rem;
+        }
+      }
+
+      .button {
+        align-self: center;
+        width: fit-content;
+        height: fit-content;
+        padding: 11px 45px;
+        border-radius: 4px;
+        color: white;
+        background-color: #008ace;
+        border: 2px solid #008ace;
+        margin: 1.25rem auto 1.25rem 0px;
+        cursor: pointer;
+
+        &.white {
+          color: #008ace;
+          background-color: white;
+          margin: 20px auto;
+        }
+
+        &:hover {
+          opacity: 0.9;
+          box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        &:active {
+          box-shadow: inset 0px 0px 16px rgba(0, 0, 0, 0.4) !important;
+        }
+
+      }
+
+      .option-login {
+        /*border-right: 1px solid #e5e5e5;
+        padding: 25px 35px 25px 0px;
+        margin-left: 6px;
+        width: 100%;
+        height: 100%;
+        position: relative;
+        min-width: 285px;*/
+        //margin-top: 26px;
+
+        .divider {
+          border-top: 1px solid #c2c2c2;
+          margin-bottom: 1rem;
+          margin-top: -1rem;
+        }
+
+        // .seperator-or {
+        //   position: absolute;
+        //   text-align: center;
+        //   right: 0px;
+        //   top: 0px;
+        //   background-color: white;
+        //   width: 30px;
+        //   height: 40px;
+        //   line-height: 37px;
+        //   margin-right: -14px;
+        //   margin-top: 67px;
+        // }
+
+        // .login-internal {
+        //   color: #008ace;
+        //   margin-left: 10px;
+        //   cursor: pointer;
+        //   font-weight: 400;
+
+        //   &:hover {
+        //     opacity: 0.8;
+        //   }
+
+        //   &:active {
+        //     color: #4da25c;
+        //   }
+        // }
+      }
+
+      // .option-new-user {
+      //   width: 100%;
+      //   padding: 25px 35px;
+      //   text-align: center;
+      //   height: 100%;
+      //   min-width: 285px;
+      // }
+
+    }
+
+    // .title {
+    //   font-weight: 300;
+    //   font-size: 2rem;
+    //   margin: 1.3rem 0;
+    // }
+
+    // .selection {
+    //   @include flexbox(0 0 auto, row);
+    //   a {
+    //     @include flexbox(0 0 auto, column);
+    //   }
+    //   //Responsive
+    //   @include breakpoint(xs) {
+    //     @include flexbox(0 0 auto, column);
+    //   }
+    //   li {
+    //     @include flexbox(0 0 auto, column);
+    //     margin: 1rem;
+    //     width: 10.5rem;
+    //     height: 11rem;
+    //     border-radius: 4px;
+    //     background: #fff;
+    //     border: 1px solid rgba(134, 134, 134, 0.4);
+    //     box-shadow: 0px 0px 8px rgba(183, 183, 183, 0.58);
+    //     .statement {
+    //       font-weight: 400;
+    //       font-size: 1.2rem;
+    //     }
+    //     .type {
+    //       font-weight: 700;
+    //       font-size: 1.4rem;
+    //     }
+    //     .icon {
+    //       margin: 1rem 0;
+    //       &.vendor {
+    //         color: $syscoblue;
+    //         font-size: 4rem;
+    //         background-size: contain;
+    //         width: 4rem;
+    //         height: 4rem;
+    //       }
+    //       &.associate {
+    //         color: $syscoyellow;
+    //         font-size: 4rem;
+    //         background-size: contain;
+    //         width: 3rem;
+    //         height: 4rem;
+    //       }
+    //     }
+    //     &:hover {
+    //       cursor: pointer;
+    //       border: 1px solid rgba(134, 134, 134, 0.1);
+    //       box-shadow: 0px 0px 2px rgba(183, 183, 183, 0.68);
+    //     }
+
+    //     &:active,
+    //     &:focus {
+    //       box-shadow: 0 0 3px 3px rgba(0, 140, 209, 0.4);
+    //     }
+    //   }
+    // }
+  }
+
+  /*
+  // Reset & forgot password page
+  .reset-password {
+    .subtitle-b {
+      font-weight: 400;
+      font-size: 1rem;
+      width: 16rem;
+      text-align: center;
+      padding-bottom: 1.3rem;
+      color: $textstandard;
+      opacity: 0.7;
+      span {
+        font-weight: 600;
+      }
+    }
+  }
+
+  // Custom pre login level error page
+  .login-message {
+    width: 42rem;
+    .logo {
+      width: 7rem;
+      margin: -0.5rem 0 0 -0.5rem;
+      align-self: flex-start;
+    }
+    .errorimg {
+      align-self: flex-end;
+      margin-bottom: 2rem;
+      margin-right: -3rem;
+      width: 29rem;
+      &.norole {
+        align-self: center;
+        width: 9rem;
+        margin: 2rem;
+      }
+    }
+    .subtitle-b {
+      font-weight: 300;
+      font-size: 1.2rem;
+      width: 100%;
+      text-align: center;
+      padding-bottom: 1.3rem;
+      color: $textstandard;
+      opacity: 0.7;
+      span {
+        font-weight: 600;
+      }
+    }
+  }
+  */
+}
