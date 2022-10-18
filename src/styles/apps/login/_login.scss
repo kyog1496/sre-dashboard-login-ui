@@ -23,11 +23,11 @@
     box-shadow: 0px 0px 34px rgb(54, 54, 54);
     border-radius: 0.7rem 0 0 0.7rem;
     
-    form {
-      @include flexbox(0 0 auto, column, flex-start, center);
-    }
+    // form {
+    //   @include flexbox(0 0 auto, column, flex-start, center);
+    // }
     .logo {
-      height: 4rem;
+      height: 5rem;
       margin-bottom: 1.5rem;
     }
     // .title {
@@ -67,23 +67,23 @@
     //   border: none;
     //   outline: none;
     // }
-    .login-options {
-      @include flexbox();
-      flex-wrap: nowrap;
-      height: 3rem;
-      .toggle {
-        @include flexbox();
-        font-size: 0.8rem;
-        margin-right: 1rem;
-        flex-wrap: nowrap;
-      }
-      /*
-      .forgot-password {
-        font-size: 0.8rem;
-        flex-wrap: nowrap;
-      }
-      */
-    }
+    // .login-options {
+    //   @include flexbox();
+    //   flex-wrap: nowrap;
+    //   height: 3rem;
+    //   .toggle {
+    //     @include flexbox();
+    //     font-size: 0.8rem;
+    //     margin-right: 1rem;
+    //     flex-wrap: nowrap;
+    //   }
+    //   /*
+    //   .forgot-password {
+    //     font-size: 0.8rem;
+    //     flex-wrap: nowrap;
+    //   }
+    //   */
+    // }
     /*
     .validations {
       @include flexbox();
@@ -112,23 +112,25 @@
       margin-top: 8rem;
 
       .welcome-text {
-        margin-left: 10.6rem;
+        margin-left: 12.2rem;
+        margin-bottom: 0.6rem;
       }
 
       .options-inner-wrapper {
         display: flex;
-        margin-left: 10.6rem;
+        margin-left: 12.5rem;
       }
 
       .suite-logo {
         display: flex;
-        font-size: 2rem;
+        font-size: 2.5rem;
         font-weight: 100;
         line-height: 3.75rem;
         color: #e5e5e5;
 
         img {
           margin-right: 0.9rem;
+          margin-top: -0.3rem;
         }
         span {
           margin-left: 0.9rem;
@@ -137,10 +139,10 @@
           margin-top: 0.5rem;
 
           .sub-title {
-            font-size: 0.75rem;
-            font-weight: 600;
+            font-size: 0.9rem;
+            font-weight: 500;
             //margin-left: 0;
-            margin-top: -0.3rem;
+            opacity: 0.7;
           }
         }
       }
@@ -153,7 +155,7 @@
 
       .login-text {
         color: #7a838b;
-        font-size: 1rem;
+        font-size: 1.19rem;
         line-height: 1.4rem;
         font-weight: 100;
 
